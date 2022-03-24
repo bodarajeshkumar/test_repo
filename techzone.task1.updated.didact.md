@@ -1,7 +1,8 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <script src="test.js"></script>
+  <script src="didact.js">
+  </script>
   <style>
     html,
     div,
@@ -284,94 +285,97 @@
   <div class="timeline">
     <div style="margin-top: 0px; padding-top: 0px" class="container right">
       <div class="content">
+        <p>Open the sandbox terminal.</p>
+        <a class="button is-dark is-medium" title="Open Terminal"
+          href="didact://?commandId=terminal-for-sandbox-container:new">Open Terminal</a>
+      </div>
+    </div>
+    <div class="container right" style="margin-top: 0px; padding-top: 0px">
+      <div class="content">
+        <p>Clone the GitHub repository.</p>
+        <a class="button is-dark is-medium" title="Get the Code"
+          href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$git%20clone%20https://github.com/pgirishibm/wkc-api%20${CHE_PROJECTS_ROOT}/wkc-api">Get
+          Code</a>
+      </div>
+    </div>
+    <div style="margin-top: 0px; padding-top: 0px" class="container right">
+      <div class="content">
+        <p>Configure Environment</p>
+        <a class="button is-dark is-medium" title="Configure Environment"
+          href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$export TZHOSTNAME=datafabric.ibmcloudpack.com:12864;export WKCUSER=admin;export PASSWORD=CP4DDataFabric;pip3.8 install pandas python-decouple requests;cd /projects/wkc-api/notebooks/sandbox/">Configure
+          Environment</a>
+      </div>
+    </div>
+    <div style="margin-top: 0px; padding-top: 0px" class="container right">
+      <div class="content">
         <details>
           <summary>User management</summary>
           <br><br>
-           <div>
-              <p>Select the option</p>
-              <div style="float:left;padding-left:0px;">
-                <input type="radio" id="createusersoption" name="userselection" value="createusers" />
-                <label for="createusers">Create Users</label>
-              </div>
-              <div style="float:left;padding-left:30px;">
-                <input type="radio" id="updateusersoption" name="userselection" value="updateusers" />
-                <label for="updateusers">Update Users</label><br />
-              </div>
+          <div>
+            <p>Select the option</p>
+            <div style="float:left;padding-left:0px;" id="step1">
+              <input type="radio" id="createusersoption" name="userselection" value="createusers" />
+              <label for="createusers">Create Users</label>
+            </div>
+            <div style="float:left;padding-left:30px;">
+              <input type="radio" id="updateusersoption" name="userselection" value="updateusers" />
+              <label for="updateusers">Update Users</label><br />
+            </div>
           </div>
           <div class="timeline" style="top: 35px; margin-left: 15px">
-            <div id="usermanagementsteps" style="display:none">
-            <div style="margin-top: 0px; padding-top: 0px" class="container right">
-              <div class="content">
-                <p style="margin-top:20px;">Open the sandbox terminal.</p>
-                <a class="button is-dark is-medium" title="Open Terminal"
-                  href="didact://?commandId=terminal-for-sandbox-container:new">Open Terminal</a>
+            <div id="createusersteps" style="display:none">
+              <div id="createusers" class="container right">
+                <div class="content">
+                  <p style="margin-top:20px;">Configure new users</p>
+                  <a class="button is-dark is-medium" title="Configure new users"
+                    href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$python3.8 createUsers.py">Configure
+                    new users
+                  </a>
+                </div>
+              </div>
+              <div id="createusers" class="container right">
+                <div class="content">
+                  <p>Create Users</p>
+                  <a class="button is-dark is-medium" title="Create Users"
+                    href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$python3.8 createUsers.py">Create
+                    users</a>
+                </div>
+              </div>
+              <div style="margin-top: 0px; padding-top: 0px" class="container right">
+                <div class="content">
+                  <p>List Users.</p>
+                  <a class="button is-dark is-medium" title="List Users"
+                    href="didact://?commandId=vscode.open&projectFilePath=wkc-api/notebooks/sandbox/users_export.csv">List
+                    users</a>
+                </div>
               </div>
             </div>
-            <div class="container right" style="margin-top: 0px; padding-top: 0px">
-              <div class="content">
-                <p>Clone the GitHub repository.</p>
-                <a class="button is-dark is-medium" title="Get the Code"
-                  href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$git%20clone%20https://github.com/pgirishibm/wkc-api%20${CHE_PROJECTS_ROOT}/wkc-api">Get
-                  Code</a>
+            <div id="updateusersteps" style="display:none">
+              <div class="container right">
+                <div class="content">
+                  <p style="margin-top:20px;">Export User List</p>
+                  <a class="button is-dark is-medium" title="Export User List"
+                    href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$python3.8 exportUsers.py">Export
+                    User List</a>
+                </div>
+              </div>
+              <div id="updateusers" class="container right">
+                <div class="content">
+                  <p>Update New Users List.</p>
+                  <a class="button is-dark is-medium" title="Update New Users List"
+                    href="didact://?commandId=vscode.open&projectFilePath=wkc-api/notebooks/sandbox/new_users.csv">Update
+                    New Users List</a>
+                </div>
+              </div>
+              <div style="margin-top: 0px; padding-top: 0px" class="container right">
+                <div class="content">
+                  <p>List Users</p>
+                  <a class="button is-dark is-medium" title="List Users"
+                    href="didact://?commandId=vscode.open&projectFilePath=wkc-api/notebooks/sandbox/users_export.csv">List
+                    Users</a>
+                </div>
               </div>
             </div>
-            <div style="margin-top: 0px; padding-top: 0px" class="container right">
-              <div class="content">
-                <p>Configure Environment</p>
-                <a class="button is-dark is-medium" title="Configure Environment"
-                  href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$export TZHOSTNAME=datafabric.ibmcloudpack.com:12864;export WKCUSER=admin;export PASSWORD=CP4DDataFabric;pip3.8 install pandas python-decouple requests;cd /projects/wkc-api/notebooks/sandbox/">Configure
-                  Environment</a>
-              </div>
-            </div>
-            <div class="container right">
-              <div class="content">
-                <p>Export User List</p>
-                <a class="button is-dark is-medium" title="Export User List"
-                  href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$python3.8 exportUsers.py">Export
-                  User List</a>
-              </div>
-            </div>
-            <div class="container right">
-              <div class="content">
-                <p>List Users.</p>
-                <a class="button is-dark is-medium" title="List Users"
-                  href="didact://?commandId=vscode.open&projectFilePath=wkc-api/notebooks/sandbox/users_export.csv">List
-                  Users</a>
-              </div>
-            </div>
-            <div id="updateusers" style="display: inline" class="container right">
-              <div class="content">
-                <p>Update New Users List.</p>
-                <a class="button is-dark is-medium" title="Update New Users List"
-                  href="didact://?commandId=vscode.open&projectFilePath=wkc-api/notebooks/sandbox/new_users.csv">Update
-                  New Users List</a>
-              </div>
-            </div>
-            <div id="createusers" style="display: inline" class="container right">
-              <div class="content">
-                <p>Create Users</p>
-                <a class="button is-dark is-medium" title="Create Users"
-                  href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$python3.8 createUsers.py">Create
-                  Users</a>
-              </div>
-            </div>
-            <div class="container right">
-              <div class="content">
-                <p>Export Updated User List</p>
-                <a class="button is-dark is-medium" title="Export Updated User List"
-                  href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$python3.8 exportUsers.py">Export
-                  Updated User List</a>
-              </div>
-            </div>
-            <div style="margin-top: 0px; padding-top: 0px" class="container right">
-              <div class="content">
-                <p>List Users.</p>
-                <a class="button is-dark is-medium" title="List Users"
-                  href="didact://?commandId=vscode.open&projectFilePath=wkc-api/notebooks/sandbox/users_export.csv">List
-                  Users</a>
-              </div>
-            </div>
-          </div>
           </div>
         </details>
       </div>
@@ -379,77 +383,71 @@
     <div class="container right">
       <div class="content">
         <details>
-          <summary>Governance Artifacts</summary>
-          <div class="timeline" style="top: 30px; margin-left: 20px">
-            <div style="margin-top: 0px; padding-top: 0px" class="container right">
-              <div class="content">
-                <p style="float: left">Open the sandbox terminal.</p>
-                <a class="button is-dark is-medium" title="Open Terminal"
-                  href="didact://?commandId=terminal-for-sandbox-container:new">Open Terminal</a>
+          <summary>Governance artifacts</summary>
+          <br><br>
+          <div>
+            <p>Select the option</p>
+            <div style="float:left;padding-left:0px;" id="step1">
+              <input type="radio" id="createcategoriesopt" name="createcategoriesopt" value="createcategories" />
+              <label for="createusers">Create new categories/terms</label>
+            </div>
+            <div style="float:left;padding-left:30px;">
+              <input type="radio" id="updatecategoriesopt" name="createcategoriesopt" value="updatecategories" />
+              <label for="updateusers">Update new categories/terms</label><br />
+            </div>
+          </div>
+          <div class="timeline" style="top: 35px; margin-left: 15px">
+            <div id="createcategoriessteps">
+              <div class="container right">
+                <div class="content">
+                  <p style="margin-top:20px;">Configure new categories</p>
+                  <a class="button is-dark is-medium" title="Create Users"
+                    href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$python3.8 createUsers.py">Configure
+                    new
+                    categories</a>
+                </div>
+              </div>
+              <div class="container right">
+                <div class="content">
+                  <p>Create categories</p>
+                  <a class="button is-dark is-medium" title="Create Users"
+                    href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$python3.8 createUsers.py">Create
+                    categories</a>
+                </div>
+              </div>
+              <div style="margin-top: 0px; padding-top: 0px" class="container right">
+                <div class="content">
+                  <p>List categories.</p>
+                  <a class="button is-dark is-medium" title="List Users"
+                    href="didact://?commandId=vscode.open&projectFilePath=wkc-api/notebooks/sandbox/users_export.csv">List
+                    categories</a>
+                </div>
               </div>
             </div>
-            <div class="container right" style="margin-top: 0px; padding-top: 0px">
-              <div class="content">
-                <p>Clone the GitHub repository.</p>
-                <a class="button is-dark is-medium" title="Get the Code"
-                  href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$git%20clone%20https://github.com/pgirishibm/wkc-api%20${CHE_PROJECTS_ROOT}/wkc-api">Get
-                  Code</a>
+            <div id="updatecategoriessteps">
+              <div class="container right">
+                <div class="content">
+                  <p style="margin-top:20px;">Export User List</p>
+                  <a class="button is-dark is-medium" title="Export User List"
+                    href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$python3.8 exportUsers.py">Update
+                    Categories</a>
+                </div>
               </div>
-            </div>
-            <div style="margin-top: 0px; padding-top: 0px" class="container right">
-              <div class="content">
-                <p>Configure Environment</p>
-                <a class="button is-dark is-medium" title="Configure Environment"
-                  href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$export TZHOSTNAME=datafabric.ibmcloudpack.com:12864;export WKCUSER=admin;export PASSWORD=CP4DDataFabric;pip3.8 install pandas python-decouple requests;cd /projects/wkc-api/notebooks/sandbox/">Configure
-                  Environment</a>
+              <div class="container right">
+                <div class="content">
+                  <p>Update New Users List.</p>
+                  <a class="button is-dark is-medium" title="Update New Users List"
+                    href="didact://?commandId=vscode.open&projectFilePath=wkc-api/notebooks/sandbox/new_users.csv">Update
+                    Terms</a>
+                </div>
               </div>
-            </div>
-            <div class="container right">
-              <div class="content">
-                <p>Export User List</p>
-                <a class="button is-dark is-medium" title="Export User List"
-                  href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$python3.8 exportUsers.py">Export
-                  User List</a>
-              </div>
-            </div>
-            <div class="container right">
-              <div class="content">
-                <p>List Users.</p>
-                <a class="button is-dark is-medium" title="List Users"
-                  href="didact://?commandId=vscode.open&projectFilePath=wkc-api/notebooks/sandbox/users_export.csv">List
-                  Users</a>
-              </div>
-            </div>
-            <div id="updateusers" class="container right">
-              <div class="content">
-                <p>Update New Users List.</p>
-                <a class="button is-dark is-medium" title="Update New Users List"
-                  href="didact://?commandId=vscode.open&projectFilePath=wkc-api/notebooks/sandbox/new_users.csv">Update
-                  New Users List</a>
-              </div>
-            </div>
-            <div id="createusers" class="container right">
-              <div class="content">
-                <p>Create Users</p>
-                <a class="button is-dark is-medium" title="Create Users"
-                  href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$python3.8 createUsers.py">Create
-                  Users</a>
-              </div>
-            </div>
-            <div class="container right">
-              <div class="content">
-                <p>Export Updated User List</p>
-                <a class="button is-dark is-medium" title="Export Updated User List"
-                  href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$python3.8 exportUsers.py">Export
-                  Updated User List</a>
-              </div>
-            </div>
-            <div style="margin-top: 0px; padding-top: 0px" class="container right">
-              <div class="content">
-                <p>List Users.</p>
-                <a class="button is-dark is-medium" title="List Users"
-                  href="didact://?commandId=vscode.open&projectFilePath=wkc-api/notebooks/sandbox/users_export.csv">List
-                  Users</a>
+              <div style="margin-top: 0px; padding-top: 0px" class="container right">
+                <div class="content">
+                  <p>List terms</p>
+                  <a class="button is-dark is-medium" title="List Users"
+                    href="didact://?commandId=vscode.open&projectFilePath=wkc-api/notebooks/sandbox/users_export.csv">List
+                    Terms</a>
+                </div>
               </div>
             </div>
           </div>
