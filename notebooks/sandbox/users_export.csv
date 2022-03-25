@@ -1,19 +1,24 @@
-displayName,email,permissions,uid,user_roles,username
-admin,--,"['administrator', 'can_provision', 'manage_catalog', 'create_project', 'create_space', 'author_governance_artifacts', 'manage_governance_workflow', 'view_governance_artifacts', 'manage_categories', 'manage_glossary', 'manage_quality', 'manage_information_assets', 'manage_discovery', 'manage_metadata_import', 'access_catalog', 'view_quality', 'access_information_assets']",1000330999,"['zen_administrator_role', 'zen_developer_role', 'wkc_data_scientist_role', 'zen_data_engineer_role', 'wkc_data_steward_role', 'wkc_business_analyst_role', 'wkc_data_quality_analyst_role']",admin
-Data Scientist,datascientist@ibm.com,"['access_catalog', 'create_project', 'create_space']",1000331002,['wkc_data_scientist_role'],datascientist
-Data Steward,datasteward@ibm.com,"['create_project', 'manage_information_assets', 'manage_metadata_import', 'manage_discovery', 'view_quality', 'create_space', 'author_governance_artifacts', 'view_governance_artifacts', 'access_catalog']",1000331003,['wkc_data_steward_role'],datasteward
-Data Engineer,dataengineer@ibm.com,"['create_project', 'author_governance_artifacts', 'view_governance_artifacts', 'can_provision', 'access_catalog', 'view_quality', 'manage_information_assets', 'manage_metadata_import', 'manage_discovery', 'manage_quality', 'create_space']",1000331004,['zen_data_engineer_role'],dataengineer
-Data Analyst,dqanalyst@ibm.com,"['create_project', 'manage_information_assets', 'manage_metadata_import', 'manage_discovery', 'manage_quality', 'view_governance_artifacts', 'author_governance_artifacts', 'access_catalog', 'create_space']",1000331005,['wkc_data_quality_analyst_role'],dqanalyst
-Data Scientist and Engineer Lead,dslead@ibm.com,"['access_catalog', 'create_project', 'create_space', 'author_governance_artifacts', 'view_governance_artifacts', 'can_provision', 'view_quality', 'manage_information_assets', 'manage_metadata_import', 'manage_discovery', 'manage_quality']",1000331006,"['wkc_data_scientist_role', 'zen_data_engineer_role']",dslead
-UAT ops,uatops@ibm.com,"['access_catalog', 'create_project', 'create_space']",1000331007,['wkc_data_scientist_role'],uatops
-Prod Ops,prodops@ibm.com,"['access_catalog', 'create_project', 'create_space']",1000331008,['wkc_data_scientist_role'],prodops
-Reporting user,ba@ibm.com,"['create_project', 'access_catalog', 'access_information_assets', 'view_quality', 'create_space']",1000331009,['wkc_business_analyst_role'],potbauser
-BaDisplay164680159049410,BA11@gmail.com,"['create_project', 'access_catalog', 'access_information_assets', 'view_quality', 'create_space']",1000331010,['wkc_business_analyst_role'],bauser164680159049451
-Girish,girish@in.com,"['create_project', 'access_catalog', 'access_information_assets', 'view_quality', 'create_space']",1000331026,['wkc_business_analyst_role'],girish
-Amol,amol@in.com,"['create_project', 'access_catalog', 'access_information_assets', 'view_quality', 'create_space']",1000331031,['wkc_business_analyst_role'],amol
-CP4DUser1,CP4DUser1@in.com,"['create_project', 'access_catalog', 'access_information_assets', 'view_quality', 'create_space']",1000331034,['wkc_business_analyst_role'],cp4duser1
-CP4DUser2,CP4DUser2@in.com,"['create_project', 'access_catalog', 'access_information_assets', 'view_quality', 'create_space']",1000331035,['wkc_business_analyst_role'],cp4duser2
-CP4DUser3,CP4DUser3@in.com,"['create_project', 'access_catalog', 'access_information_assets', 'view_quality', 'create_space']",1000331036,['wkc_business_analyst_role'],cp4duser3
-Rajesh,rajeh1@in.com,"['create_project', 'access_catalog', 'access_information_assets', 'view_quality', 'create_space']",1000331037,['wkc_business_analyst_role'],rajesh
-CP4DDemo5,rajeh1@in.com,"['create_project', 'access_catalog', 'access_information_assets', 'view_quality', 'create_space']",1000331039,['wkc_business_analyst_role'],cp4ddemo5
-User 1,user1@ibm.com,"['access_catalog', 'create_project', 'create_space']",1000331040,['wkc_data_scientist_role'],user1
+displayName,email,username,uid,user_roles,permissions
+admin,--,admin,1000330999,"['zen_administrator_role', 'zen_developer_role', 'wkc_data_scientist_role', 'zen_data_engineer_role', 'wkc_data_steward_role', 'wkc_business_analyst_role', 'wkc_data_quality_analyst_role']","['administrator', 'can_provision', 'manage_catalog', 'create_project', 'create_space', 'author_governance_artifacts', 'manage_governance_workflow', 'view_governance_artifacts', 'manage_categories', 'manage_glossary', 'manage_quality', 'manage_information_assets', 'manage_discovery', 'manage_metadata_import', 'access_catalog', 'view_quality', 'access_information_assets']"
+Data Scientist,datascientist@ibm.com,datascientist,1000331002,['wkc_data_scientist_role'],"['access_catalog', 'create_project', 'create_space']"
+Data Steward,datasteward@ibm.com,datasteward,1000331003,['wkc_data_steward_role'],"['create_project', 'manage_information_assets', 'manage_metadata_import', 'manage_discovery', 'view_quality', 'create_space', 'author_governance_artifacts', 'view_governance_artifacts', 'access_catalog']"
+Data Engineer,dataengineer@ibm.com,dataengineer,1000331004,['zen_data_engineer_role'],"['create_project', 'author_governance_artifacts', 'view_governance_artifacts', 'can_provision', 'access_catalog', 'view_quality', 'manage_information_assets', 'manage_metadata_import', 'manage_discovery', 'manage_quality', 'create_space']"
+Data Analyst,dqanalyst@ibm.com,dqanalyst,1000331005,['wkc_data_quality_analyst_role'],"['create_project', 'manage_information_assets', 'manage_metadata_import', 'manage_discovery', 'manage_quality', 'view_governance_artifacts', 'author_governance_artifacts', 'access_catalog', 'create_space']"
+Data Scientist and Engineer Lead,dslead@ibm.com,dslead,1000331006,"['wkc_data_scientist_role', 'zen_data_engineer_role']","['access_catalog', 'create_project', 'create_space', 'author_governance_artifacts', 'view_governance_artifacts', 'can_provision', 'view_quality', 'manage_information_assets', 'manage_metadata_import', 'manage_discovery', 'manage_quality']"
+UAT ops,uatops@ibm.com,uatops,1000331007,['wkc_data_scientist_role'],"['access_catalog', 'create_project', 'create_space']"
+Prod Ops,prodops@ibm.com,prodops,1000331008,['wkc_data_scientist_role'],"['access_catalog', 'create_project', 'create_space']"
+Reporting user,ba@ibm.com,potbauser,1000331009,['wkc_business_analyst_role'],"['create_project', 'access_catalog', 'access_information_assets', 'view_quality', 'create_space']"
+BaDisplay164680159049410,BA11@gmail.com,bauser164680159049451,1000331010,['wkc_business_analyst_role'],"['create_project', 'access_catalog', 'access_information_assets', 'view_quality', 'create_space']"
+Amol,amol@in.com,amol,1000331031,['wkc_business_analyst_role'],"['create_project', 'access_catalog', 'access_information_assets', 'view_quality', 'create_space']"
+CP4DUser1,CP4DUser1@in.com,cp4duser1,1000331034,['wkc_business_analyst_role'],"['create_project', 'access_catalog', 'access_information_assets', 'view_quality', 'create_space']"
+CP4DUser2,CP4DUser2@in.com,cp4duser2,1000331035,['wkc_business_analyst_role'],"['create_project', 'access_catalog', 'access_information_assets', 'view_quality', 'create_space']"
+CP4DUser3,CP4DUser3@in.com,cp4duser3,1000331036,['wkc_business_analyst_role'],"['create_project', 'access_catalog', 'access_information_assets', 'view_quality', 'create_space']"
+Rajesh,rajeh1@in.com,rajesh,1000331037,['wkc_business_analyst_role'],"['create_project', 'access_catalog', 'access_information_assets', 'view_quality', 'create_space']"
+CP4DDemo5,rajeh1@in.com,cp4ddemo5,1000331039,['wkc_business_analyst_role'],"['create_project', 'access_catalog', 'access_information_assets', 'view_quality', 'create_space']"
+User 1,user1@ibm.com,user1,1000331040,['wkc_data_scientist_role'],"['access_catalog', 'create_project', 'create_space']"
+User 2,user2@ibm.com,user2,1000331041,['wkc_data_scientist_role'],"['access_catalog', 'create_project', 'create_space']"
+Rajesh1,rajesh1@ibm.com,rajesh1,1000331043,['wkc_data_scientist_role'],"['access_catalog', 'create_project', 'create_space']"
+User 3,user3@ibm.com,user3,1000331048,['wkc_data_scientist_role'],"['access_catalog', 'create_project', 'create_space']"
+User 4,user4@ibm.com,user4,1000331049,['wkc_data_scientist_role'],"['access_catalog', 'create_project', 'create_space']"
+User 5,user1@ibm.com,user5,1000331051,['wkc_data_scientist_role'],"['access_catalog', 'create_project', 'create_space']"
+User 6,user1@ibm.com,user6,1000331052,['wkc_data_scientist_role'],"['access_catalog', 'create_project', 'create_space']"
