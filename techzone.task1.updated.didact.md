@@ -259,6 +259,11 @@
     a:visited {
       color: #be95ff;
     }
+    .timelinestep
+    {
+      margin-top: 0px;
+      padding-top: 0px;
+    }
     summary {
       float: left;
     }
@@ -314,7 +319,7 @@
         </a>
       </div>
     </div>
-    <div style="margin-top: 0px; padding-top: 0px" class="container right">
+    <div class="container right timelinestep">
       <div class="content">
         <details>
           <summary>User management</summary>
@@ -341,7 +346,7 @@
                   </a>
                 </div>
               </div>
-              <div id="createusers" class="container right">
+              <div id="createusers" class="container right timelinestep">
                 <div class="content">
                   <p>Create Users</p>
                   <a class="button is-dark is-medium" title="Create Users"
@@ -349,7 +354,7 @@
                     users</a>
                 </div>
               </div>
-              <div style="margin-top: 0px; padding-top: 0px" class="container right">
+              <div class="container right timelinestep">
                 <div class="content">
                   <p>Get Users.</p>
                   <a class="button is-dark is-medium" title="Get Users"
@@ -357,7 +362,7 @@
                     users</a>
                 </div>
               </div>
-              <div style="margin-top: 0px; padding-top: 0px" class="container right">
+              <div class="container right timelinestep">
                 <div class="content">
                   <p>List Users.</p>
                   <a class="button is-dark is-medium" title="List Users"
@@ -375,21 +380,27 @@
                     User List</a>
                 </div>
               </div>
-              <div style="margin-top:0px; padding-top:0px;"class="container right">
+              <div class="container right timelinestep">
                 <div class="content">
                    <p>List Users.</p>
                    <a class="button is-dark is-medium" title="List Users" href="didact://?commandId=vscode.open&projectFilePath=../wkc-api/notebooks/sandbox/users_export.csv">List Users</a>
                 </div>
              </div>
-              <div id="updateusers" class="container right">
+              <div id="updateusers" class="container right timelinestep">
                 <div class="content">
                   <p>Update New Users List.</p>
                   <a class="button is-dark is-medium" title="Update New Users List"
-                    href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$python3.8 exportUsers.py">Update
+                    href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$python3.8 createUsers.py">Update
                     New Users List</a>
                 </div>
               </div>
-              <div style="margin-top: 0px; padding-top: 0px" class="container right">
+              <div class="container right timelinestep">
+                <div class="content">
+                   <p>Get updated users.</p>
+                   <a class="button is-dark is-medium" title="List Users" href="didact://?commandId=vscode.open&projectFilePath=../wkc-api/notebooks/sandbox/users_export.csv">Get updated users</a>
+                </div>
+             </div>
+              <div class="container right timelinestep">
                 <div class="content">
                   <p>List Users</p>
                   <a class="button is-dark is-medium" title="List Users"
@@ -424,50 +435,139 @@
                 <div class="content">
                   <p style="margin-top:20px;">Configure new categories</p>
                   <a class="button is-dark is-medium" title="Create Users"
-                    href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$python3.8 createUsers.py">Configure
+                    href="didact://?commandId=vscode.open&projectFilePath=../wkc-api/notebooks/sandbox/new_categories.csv">Configure
                     new
                     categories</a>
                 </div>
               </div>
-              <div class="container right">
+              <div class="container right timelinestep">
                 <div class="content">
                   <p>Create categories</p>
-                  <a class="button is-dark is-medium" title="Create Users"
-                    href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$python3.8 createUsers.py">Create
+                  <a class="button is-dark is-medium" title="Create Categories"
+                    href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$python3.8 create_categories.py">Create
                     categories</a>
                 </div>
               </div>
-              <div style="margin-top: 0px; padding-top: 0px" class="container right">
+              <div class="container right timelinestep">
+                <div class="content">
+                  <p>Get categories</p>
+                  <a class="button is-dark is-medium" title="Create Categories"
+                    href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$python3.8 export_categories.py">Get
+                    categories</a>
+                </div>
+              </div>
+              <div class="container right timelinestep">
                 <div class="content">
                   <p>List categories.</p>
-                  <a class="button is-dark is-medium" title="List Users"
-                    href="didact://?commandId=vscode.open&projectFilePath=wkc-api/notebooks/sandbox/users_export.csv">List
+                  <a class="button is-dark is-medium" title="List Categories"
+                    href="didact://?commandId=vscode.open&projectFilePath=../wkc-api/notebooks/sandbox/export_categories.csv">List
                     categories</a>
+                </div>
+              </div>
+              <div class="container right timelinestep">
+                <div class="content">
+                  <p>Configure new terms</p>
+                  <a class="button is-dark is-medium" title="Create Terms"
+                    href="didact://?commandId=vscode.open&projectFilePath=../wkc-api/notebooks/sandbox/new_terms.csv">Configure
+                    new
+                    terms</a>
+                </div>
+              </div>
+              <div class="container right timelinestep">
+                <div class="content">
+                  <p>Create terms</p>
+                  <a class="button is-dark is-medium" title="Create Terms"
+                    href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$python3.8 create_terms.py">Create
+                    terms</a>
+                </div>
+              </div>
+              <div class="container right timelinestep">
+                <div class="content">
+                  <p>Get terms</p>
+                  <a class="button is-dark is-medium" title="Create Categories"
+                    href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$python3.8 export_terms.py">Get
+                    terms</a>
+                </div>
+              </div>
+              <div class="container right timelinestep">
+                <div class="content">
+                  <p>List terms.</p>
+                  <a class="button is-dark is-medium" title="List Terms"
+                    href="didact://?commandId=vscode.open&projectFilePath=../wkc-api/notebooks/sandbox/export_terms.csv">List
+                    terms</a>
                 </div>
               </div>
             </div>
             <div id="updatecategoriessteps">
               <div class="container right">
                 <div class="content">
-                  <p style="margin-top:20px;">Export User List</p>
-                  <a class="button is-dark is-medium" title="Export User List"
-                    href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$python3.8 exportUsers.py">Update
+                  <p style="margin-top:20px;">Export Categories</p>
+                  <a class="button is-dark is-medium" title="Export Categories"
+                    href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$python3.8 export_categories.py">Export
+                    Categories</a>
+                </div>
+              </div>
+              <div class="container right timelinestep">
+                <div class="content">
+                   <p>List Categories</p>
+                   <a class="button is-dark is-medium" title="List Users" href="didact://?commandId=vscode.open&projectFilePath=../wkc-api/notebooks/sandbox/categories_export.csv">List Categories</a>
+                </div>
+             </div>
+              <div id="updateusers" class="container right timelinestep">
+                <div class="content">
+                  <p>Update New Categories List.</p>
+                  <a class="button is-dark is-medium" title="Update New Categories List"
+                    href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$python3.8 update_categories.py">Update
+                    New Categories List</a>
+                </div>
+              </div>
+              <div class="container right timelinestep">
+                <div class="content">
+                   <p>Get updated categories.</p>
+                   <a class="button is-dark is-medium" title="List Users" href="didact://?commandId=vscode.open&projectFilePath=../wkc-api/notebooks/sandbox/categories_export.csv">Get updated categories</a>
+                </div>
+             </div>
+              <div class="container right timelinestep">
+                <div class="content">
+                  <p>List Categories</p>
+                  <a class="button is-dark is-medium" title="List Users"
+                    href="didact://?commandId=vscode.open&projectFilePath=../wkc-api/notebooks/sandbox/categories_export.csv">List
                     Categories</a>
                 </div>
               </div>
               <div class="container right">
                 <div class="content">
-                  <p>Update New Users List.</p>
-                  <a class="button is-dark is-medium" title="Update New Users List"
-                    href="didact://?commandId=vscode.open&projectFilePath=wkc-api/notebooks/sandbox/new_users.csv">Update
+                  <p style="margin-top:20px;">Export terms</p>
+                  <a class="button is-dark is-medium" title="Export Terms"
+                    href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$python3.8 export_terms.py">Export
                     Terms</a>
                 </div>
               </div>
-              <div style="margin-top: 0px; padding-top: 0px" class="container right">
+              <div class="container right timelinestep">
                 <div class="content">
-                  <p>List terms</p>
-                  <a class="button is-dark is-medium" title="List Users"
-                    href="didact://?commandId=vscode.open&projectFilePath=wkc-api/notebooks/sandbox/users_export.csv">List
+                   <p>List Terms</p>
+                   <a class="button is-dark is-medium" title="List Terms" href="didact://?commandId=vscode.open&projectFilePath=../wkc-api/notebooks/sandbox/terms_export.csv">List Terms</a>
+                </div>
+             </div>
+              <div id="updateusers" class="container right timelinestep">
+                <div class="content">
+                  <p>Update New Terms List.</p>
+                  <a class="button is-dark is-medium" title="Update New Terms"
+                    href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$python3.8 update_terms.py">Update
+                    New Terms</a>
+                </div>
+              </div>
+              <div class="container right timelinestep">
+                <div class="content">
+                   <p>Get updated terms.</p>
+                   <a class="button is-dark is-medium" title="List Users" href="didact://?commandId=vscode.open&projectFilePath=../wkc-api/notebooks/sandbox/terms_export.csv">Get updated terms</a>
+                </div>
+             </div>
+              <div class="container right timelinestep">
+                <div class="content">
+                  <p>List Terms</p>
+                  <a class="button is-dark is-medium" title="List terms"
+                    href="didact://?commandId=vscode.open&projectFilePath=../wkc-api/notebooks/sandbox/terms_export.csv">List
                     Terms</a>
                 </div>
               </div>
