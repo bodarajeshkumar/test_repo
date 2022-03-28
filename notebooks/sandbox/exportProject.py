@@ -95,7 +95,7 @@ get_ipython().system(' cpdctl project list')
 # In[12]:
 
 
-result = get_ipython().getoutput("cpdctl project list --output json --raw-output --jmes-query 'resources[4].metadata.guid'")
+result = get_ipython().getoutput("cpdctl project list --output json --raw-output --jmes-query 'resources[0].metadata.guid'")
 PROJECT_ID = result.s
 
 
