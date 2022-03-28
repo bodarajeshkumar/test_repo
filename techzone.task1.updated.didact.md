@@ -302,7 +302,7 @@
       <div class="content">
         <p>Clone the GitHub repository.</p>
         <a class="button is-dark is-medium" title="Get the Code"
-          href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$git%20clone%20https://github.com/pgirishibm/wkc-api%20${CHE_PROJECTS_ROOT}/wkc-api">Get
+          href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$git%20clone%20https://github.com/bodarajeshkumar/wkc-api%20${CHE_PROJECTS_ROOT}/wkc-api">Get
           Code</a>
       </div>
     </div>
@@ -503,7 +503,7 @@
               <div class="container right timelinestep">
                 <div class="content">
                   <p>Get terms</p>
-                  <a class="button is-dark is-medium" title="Create Categories"
+                  <a class="button is-dark is-medium" title="Create terms"
                     href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$python3.8 export_terms.py">Get
                     terms</a>
                 </div>
@@ -530,7 +530,7 @@
                 <div class="content">
                   <p>List Categories</p>
                   <a class="button is-dark is-medium" title="List Users"
-                    href="didact://?commandId=vscode.open&projectFilePath=../wkc-api/notebooks/sandbox/categories_export.csv">List
+                    href="didact://?commandId=vscode.open&projectFilePath=../wkc-api/notebooks/sandbox/export_categories.csv">List
                     Categories</a>
                 </div>
               </div>
@@ -545,8 +545,8 @@
               <div class="container right timelinestep">
                 <div class="content">
                   <p>Get updated categories.</p>
-                  <a class="button is-dark is-medium" title="List Users"
-                    href="didact://?commandId=vscode.open&projectFilePath=../wkc-api/notebooks/sandbox/categories_export.csv">Get
+                  <a class="button is-dark is-medium" title="Get updated categories"
+                    href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$python3.8 export_categories.py">Get
                     updated categories</a>
                 </div>
               </div>
@@ -554,7 +554,7 @@
                 <div class="content">
                   <p>List Categories</p>
                   <a class="button is-dark is-medium" title="List Users"
-                    href="didact://?commandId=vscode.open&projectFilePath=../wkc-api/notebooks/sandbox/categories_export.csv">List
+                    href="didact://?commandId=vscode.open&projectFilePath=../wkc-api/notebooks/sandbox/export_categories.csv">List
                     Categories</a>
                 </div>
               </div>
@@ -572,7 +572,7 @@
                 <div class="content">
                   <p>List Terms</p>
                   <a class="button is-dark is-medium" title="List Terms"
-                    href="didact://?commandId=vscode.open&projectFilePath=../wkc-api/notebooks/sandbox/terms_export.csv">List
+                    href="didact://?commandId=vscode.open&projectFilePath=../wkc-api/notebooks/sandbox/export_terms.csv">List
                     Terms</a>
                 </div>
               </div>
@@ -587,8 +587,8 @@
               <div class="container right timelinestep">
                 <div class="content">
                   <p>Get updated terms.</p>
-                  <a class="button is-dark is-medium" title="List Users"
-                    href="didact://?commandId=vscode.open&projectFilePath=../wkc-api/notebooks/sandbox/terms_export.csv">Get
+                  <a class="button is-dark is-medium" title="Get updatd terms"
+                    href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$python3.8 export_terms.py">Get
                     updated terms</a>
                 </div>
               </div>
@@ -596,7 +596,7 @@
                 <div class="content">
                   <p>List Terms</p>
                   <a class="button is-dark is-medium" title="List terms"
-                    href="didact://?commandId=vscode.open&projectFilePath=../wkc-api/notebooks/sandbox/terms_export.csv">List
+                    href="didact://?commandId=vscode.open&projectFilePath=../wkc-api/notebooks/sandbox/export_terms.csv">List
                     Terms</a>
                 </div>
               </div>
