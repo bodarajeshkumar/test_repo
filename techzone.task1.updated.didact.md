@@ -397,7 +397,7 @@
                   <div class="content">
                     <p>Update New Users List.</p>
                     <a class="button is-dark is-medium" title="Update New Users List"
-                      href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$python3.8 createUsers.py">Update
+                      href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$python3.8 updateUsers.py">Update
                       New Users List</a>
                   </div>
                 </div>
