@@ -318,7 +318,7 @@
       <div class="content">
         <p>Install Dependencies</p>
         <a class="button is-dark is-medium" title="Instal Dependencies"
-          href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$pip3.8 install pandas python-decouple requests;cd /projects/wkc-api/notebooks/sandbox/">Install
+          href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$pip3.8 install pandas python-decouple requests ipython;cd /projects/wkc-api/notebooks/sandbox/">Install
           Dependencies
         </a>
       </div>
@@ -363,7 +363,7 @@
                   <div class="content">
                     <p>Get Users.</p>
                     <a class="button is-dark is-medium" title="Get Users"
-                      href="didact://?commandId=vscode.open&projectFilePath=../wkc-api/notebooks/sandbox/users_export.csv">Get
+                      href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$python3.8 exportUsers.py">Get
                       users</a>
                   </div>
                 </div>
@@ -405,7 +405,7 @@
                   <div class="content">
                     <p>Get updated users.</p>
                     <a class="button is-dark is-medium" title="List Users"
-                      href="didact://?commandId=vscode.open&projectFilePath=../wkc-api/notebooks/sandbox/users_export.csv">Get
+                      href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$python3.8 exportUsers.py">Get
                       updated users</a>
                   </div>
                 </div>
@@ -604,6 +604,30 @@
           </div>
       </div>
       </details>
+    </div>
+    <div class="container right">
+      <div class="content">
+        <details>
+          <summary>Project management</summary>
+          <br><br>
+          <div style="margin-top:0px; padding-top:0px;" class="container right">
+            <div class="content">
+              <p>Export Project.</p>
+              <a class="button is-dark is-medium" title="Export Project"
+                href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$cd /projects/wkc-api/notebooks/sandbox/;/home/user/.local/bin/ipython3 exportProject.py">Export
+                Project</a>
+            </div>
+          </div>
+          <div style="margin-top:0px; padding-top:0px;" class="container right">
+            <div class="content">
+              <p>Import Project</p>
+              <a class="button is-dark is-medium" title="Import Project"
+                href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$cd /projects/wkc-api/notebooks/sandbox/;/home/user/.local/bin/ipython3 importProject.py">Import
+                Project</a>
+            </div>
+          </div>
+        </details>
+      </div>
     </div>
     <div class="container right">
       <div class="content">

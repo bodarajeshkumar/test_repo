@@ -12,6 +12,6 @@ mainAPI = MainAPI()
 refDataAPI = endpoints.RefDataAPI(mainAPI)
 # Get list of categories and export to csv
 categoriesJSON = mainAPI.search(f'metadata.artifact_type:category')
-categoriesAPI.categories2CSV(categoriesJSON,"categories_export.csv")
+categoriesAPI.categories2CSV(categoriesJSON,"export_categories.csv")
 categoriesTable = pandas.read_csv('export_categories.csv')        
 categoriesTable
