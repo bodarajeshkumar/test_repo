@@ -12,4 +12,4 @@ mainAPI = MainAPI()
 refDataAPI = endpoints.RefDataAPI(mainAPI)
 # Get list of terms 
 termsJSON = mainAPI.search(f'metadata.artifact_type:glossary_term')
-termsAPI.terms2CSV(termsJSON, 'terms_export.csv')
+termsAPI.terms2CSV(termsJSON, 'export_terms.csv')
