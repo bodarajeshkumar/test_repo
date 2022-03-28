@@ -631,7 +631,7 @@
       <div class="content">
         <p>Push code to GitHub repository</p>
         <a class="button is-dark is-medium" title="Delete services from IBM Cloud"
-          href="didact://?commandId=vscode.didact.sendNamedTerminalAString&text=sandbox: IPython: notebooks/sandbox%20terminal$$cd%20%2Fprojects%2Fwkc-api%20%26%26sh%20/github.sh ">Push
+          href="didact://?commandId=vscode.didact.sendNamedTerminalAString&text=sandbox: IPython: notebooks/sandbox$$cd%20%2Fprojects%2Fwkc-api%20%26%26sh%20/github.sh ">Push
           to GITHUb</a>
         <p style="margin-top:10px;">Click to push code to your own Github repository. You will need a personal access
           token to complete this action via the CLI. Refer to this <a
