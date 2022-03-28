@@ -316,7 +316,7 @@
     </div>
     <div class="container right timelinestep">
       <div class="content">
-        <p>Install Dependencies</p>
+        <p>Install required dependencies for executing python scripts.</p>
         <a class="button is-dark is-medium" title="Instal Dependencies"
           href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$pip3.8 install pandas python-decouple requests ipython;cd /projects/wkc-api/notebooks/sandbox/">Install
           Dependencies
@@ -353,7 +353,7 @@
               </div>
               <div class=" container right timelinestep">
                     <div class="content">
-                      <p>Create Users</p>
+                      <p>Create new users in the configured cp4d instance </p>
                       <a class="button is-dark is-medium" title="Create Users"
                         href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$python3.8 createUsers.py">Create
                         users</a>
@@ -361,7 +361,7 @@
                 </div>
                 <div class="container right timelinestep">
                   <div class="content">
-                    <p>Get Users.</p>
+                    <p>Get all users from the cp4d instance selected configured</p>
                     <a class="button is-dark is-medium" title="Get Users"
                       href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$python3.8 exportUsers.py">Get
                       users</a>
@@ -369,7 +369,7 @@
                 </div>
                 <div class="container right timelinestep">
                   <div class="content">
-                    <p>List Users.</p>
+                    <p>List users of the configured cp4d instance</p>
                     <a class="button is-dark is-medium" title="List Users"
                       href="didact://?commandId=vscode.open&projectFilePath=../wkc-api/notebooks/sandbox/users_export.csv">List
                       users</a>
@@ -631,10 +631,10 @@
     </div>
     <div class="container right">
       <div class="content">
-        <p>Push to GitHub repository</p>
+        <p>Push code to GitHub repository</p>
         <a class="button is-dark is-medium" title="Delete services from IBM Cloud"
           href="didact://?commandId=vscode.didact.sendNamedTerminalAString&text=sandbox%20terminal$$sh%20/github.sh ">Push
-          code to your Github repository</a>
+          to GITHUb</a>
         <p style="margin-top:10px;">Click to push code to your own Github repository. You will need a personal access
           token to complete this action via the CLI. Refer to this <a
             href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token">guide</a>
