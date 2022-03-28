@@ -343,17 +343,17 @@
             <div id="createusersteps" style="display:none">
               <div class="container right">
                 <div class="content">
-                  <p style="margin-top:20px;">Configure new users to be added to the cp4d instance. You have to update
+                  <p style="margin-top:20px;">Configure users to be added to the cp4d instance. You have to update
                     the csv file with the users to be created.</p>
                   <a class="button is-dark is-medium" title="Configure new users"
                     href="didact://?commandId=vscode.open&projectFilePath=../wkc-api/notebooks/sandbox/new_users.csv"">Configure
-                    new users
+                    users
                   </a>
                 </div>
               </div>
               <div class=" container right timelinestep">
                     <div class="content">
-                      <p>Create new users in the configured cp4d instance </p>
+                      <p>Create users in the configured cp4d instance </p>
                       <a class="button is-dark is-medium" title="Create Users"
                         href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$python3.8 createUsers.py">Create
                         users</a>
@@ -361,7 +361,7 @@
                 </div>
                 <div class="container right timelinestep">
                   <div class="content">
-                    <p>Get all users from the cp4d instance selected configured</p>
+                    <p>Get all users from the cp4d instance configured</p>
                     <a class="button is-dark is-medium" title="Get Users"
                       href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$python3.8 exportUsers.py">Get
                       users</a>
@@ -379,7 +379,7 @@
               <div id="updateusersteps" style="display:none">
                 <div class="container right">
                   <div class="content">
-                    <p style="margin-top:20px;">Export User List</p>
+                    <p style="margin-top:20px;">Export User List to the csv file</p>
                     <a class="button is-dark is-medium" title="Export User List"
                       href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$python3.8 exportUsers.py">Export
                       User List</a>
@@ -387,7 +387,7 @@
                 </div>
                 <div class="container right timelinestep">
                   <div class="content">
-                    <p>List Users.</p>
+                    <p>List Users from the configured cp4d instance</p>
                     <a class="button is-dark is-medium" title="List Users"
                       href="didact://?commandId=vscode.open&projectFilePath=../wkc-api/notebooks/sandbox/users_export.csv">List
                       Users</a>
@@ -395,26 +395,26 @@
                 </div>
                 <div id="updateusers" class="container right timelinestep">
                   <div class="content">
-                    <p>Update New Users List.</p>
-                    <a class="button is-dark is-medium" title="Update New Users List"
+                    <p>Update users in the configured cp4d instance</p>
+                    <a class="button is-dark is-medium" title="Update users"
                       href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$python3.8 updateUsers.py">Update
-                      New Users List</a>
+                      users</a>
                   </div>
                 </div>
                 <div class="container right timelinestep">
                   <div class="content">
-                    <p>Get updated users.</p>
+                    <p>Get updated user list from the configured cp4d instance</p>
                     <a class="button is-dark is-medium" title="List Users"
                       href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$python3.8 exportUsers.py">Get
-                      updated users</a>
+                      users</a>
                   </div>
                 </div>
                 <div class="container right timelinestep">
                   <div class="content">
-                    <p>List Users</p>
+                    <p>List Users in the configured cp4d instance</p>
                     <a class="button is-dark is-medium" title="List Users"
                       href="didact://?commandId=vscode.open&projectFilePath=../wkc-api/notebooks/sandbox/users_export.csv">List
-                      Users</a>
+                      users</a>
                   </div>
                 </div>
               </div>
@@ -431,19 +431,19 @@
             <p>Select the action to perform in the configured cp4d instance</p>
             <div style="float:left;padding-left:0px;">
               <input type="radio" id="createcategoriesopt" name="governanceartifactsopt" value="createcategories" />
-              <label for="createusers">Create new categories</label>
+              <label for="createusers">Create categories</label>
             </div>
             <div style="float:left;padding-left:30px;">
               <input type="radio" id="updatecategoriesopt" name="governanceartifactsopt" value="updatecategories" />
-              <label for="updateusers">Update new categories</label><br />
+              <label for="updateusers">Update categories</label><br />
             </div>
             <div style="float:left;padding-left:30px;">
               <input type="radio" id="createtermsopt" name="governanceartifactsopt" value="createterms" />
-              <label for="createusers">Create new terms</label>
+              <label for="createusers">Create terms</label>
             </div>
             <div style="float:left;padding-left:30px;">
               <input type="radio" id="updatetermsopt" name="governanceartifactsopt" value="updateterms" />
-              <label for="updateusers">Update new terms</label><br />
+              <label for="updateusers">Update terms</label><br />
             </div>
           </div>
           <div class="timeline">
@@ -453,13 +453,12 @@
                   <p style="margin-top:20px;">Configure new categories</p>
                   <a class="button is-dark is-medium" title="Create Users"
                     href="didact://?commandId=vscode.open&projectFilePath=../wkc-api/notebooks/sandbox/new_categories.csv">Configure
-                    new
                     categories</a>
                 </div>
               </div>
               <div class="container right timelinestep">
                 <div class="content">
-                  <p>Create categories</p>
+                  <p>Create categories in the configured cp4d instance</p>
                   <a class="button is-dark is-medium" title="Create Categories"
                     href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$python3.8 create_categories.py">Create
                     categories</a>
@@ -467,7 +466,7 @@
               </div>
               <div class="container right timelinestep">
                 <div class="content">
-                  <p>Get categories</p>
+                  <p>Get categories from the configured cp4d instance</p>
                   <a class="button is-dark is-medium" title="Create Categories"
                     href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$python3.8 export_categories.py">Get
                     categories</a>
@@ -475,7 +474,7 @@
               </div>
               <div class="container right timelinestep">
                 <div class="content">
-                  <p>List categories.</p>
+                  <p>List categories in the configured cp4d instance</p>
                   <a class="button is-dark is-medium" title="List Categories"
                     href="didact://?commandId=vscode.open&projectFilePath=../wkc-api/notebooks/sandbox/export_categories.csv">List
                     categories</a>
@@ -488,13 +487,12 @@
                   <p style="margin-top:20px;">Configure new terms</p>
                   <a class="button is-dark is-medium" title="Create Terms"
                     href="didact://?commandId=vscode.open&projectFilePath=../wkc-api/notebooks/sandbox/new_terms.csv">Configure
-                    new
                     terms</a>
                 </div>
               </div>
               <div class="container right timelinestep">
                 <div class="content">
-                  <p>Create terms</p>
+                  <p>Create terms in the configured cp4d instance</p>
                   <a class="button is-dark is-medium" title="Create Terms"
                     href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$python3.8 create_terms.py">Create
                     terms</a>
@@ -502,7 +500,7 @@
               </div>
               <div class="container right timelinestep">
                 <div class="content">
-                  <p>Get terms</p>
+                  <p>Get terms form the configured cp4d instance</p>
                   <a class="button is-dark is-medium" title="Create terms"
                     href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$python3.8 export_terms.py">Get
                     terms</a>
@@ -510,7 +508,7 @@
               </div>
               <div class="container right timelinestep">
                 <div class="content">
-                  <p>List terms.</p>
+                  <p>List terms in the configured cp4d instance</p>
                   <a class="button is-dark is-medium" title="List Terms"
                     href="didact://?commandId=vscode.open&projectFilePath=../wkc-api/notebooks/sandbox/export_terms.csv">List
                     terms</a>
@@ -520,7 +518,7 @@
             <div id="updatecategories">
               <div class="container right">
                 <div class="content">
-                  <p style="margin-top:20px;">Export Categories</p>
+                  <p style="margin-top:20px;">Export Categories to a csv file</p>
                   <a class="button is-dark is-medium" title="Export Categories"
                     href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$python3.8 export_categories.py">Export
                     Categories</a>
@@ -528,7 +526,7 @@
               </div>
               <div class="container right timelinestep">
                 <div class="content">
-                  <p>List Categories</p>
+                  <p>List Categories from the configured cp4d instance</p>
                   <a class="button is-dark is-medium" title="List Users"
                     href="didact://?commandId=vscode.open&projectFilePath=../wkc-api/notebooks/sandbox/export_categories.csv">List
                     Categories</a>
@@ -536,23 +534,23 @@
               </div>
               <div id="updateusers" class="container right timelinestep">
                 <div class="content">
-                  <p>Update New Categories List.</p>
-                  <a class="button is-dark is-medium" title="Update New Categories List"
+                  <p>Update categories from the csv file in the configured cp4d instance</p>
+                  <a class="button is-dark is-medium" title="Update Categories List"
                     href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$python3.8 update_categories.py">Update
-                    New Categories List</a>
+                    categories</a>
                 </div>
               </div>
               <div class="container right timelinestep">
                 <div class="content">
-                  <p>Get updated categories.</p>
+                  <p>Get updated categories in the configured cp4d instance</p>
                   <a class="button is-dark is-medium" title="Get updated categories"
                     href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$python3.8 export_categories.py">Get
-                    updated categories</a>
+                    categories</a>
                 </div>
               </div>
               <div class="container right timelinestep">
                 <div class="content">
-                  <p>List Categories</p>
+                  <p>List Categories from the configured cp4d instance</p>
                   <a class="button is-dark is-medium" title="List Users"
                     href="didact://?commandId=vscode.open&projectFilePath=../wkc-api/notebooks/sandbox/export_categories.csv">List
                     Categories</a>
@@ -562,7 +560,7 @@
             <div id="updateterms">
               <div class="container right">
                 <div class="content">
-                  <p style="margin-top:20px;">Export terms</p>
+                  <p style="margin-top:20px;">Export terms to a csv file</p>
                   <a class="button is-dark is-medium" title="Export Terms"
                     href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$python3.8 export_terms.py">Export
                     Terms</a>
@@ -570,7 +568,7 @@
               </div>
               <div class="container right timelinestep">
                 <div class="content">
-                  <p>List Terms</p>
+                  <p>List terms form the configured cp4d instance</p>
                   <a class="button is-dark is-medium" title="List Terms"
                     href="didact://?commandId=vscode.open&projectFilePath=../wkc-api/notebooks/sandbox/export_terms.csv">List
                     Terms</a>
@@ -578,15 +576,15 @@
               </div>
               <div id="updateusers" class="container right timelinestep">
                 <div class="content">
-                  <p>Update New Terms List.</p>
+                  <p>Update terms form the csv file</p>
                   <a class="button is-dark is-medium" title="Update New Terms"
                     href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$python3.8 update_terms.py">Update
-                    New Terms</a>
+                    Terms</a>
                 </div>
               </div>
               <div class="container right timelinestep">
                 <div class="content">
-                  <p>Get updated terms.</p>
+                  <p>Get updated terms in the configured cp4d instance</p>
                   <a class="button is-dark is-medium" title="Get updatd terms"
                     href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$python3.8 export_terms.py">Get
                     updated terms</a>
@@ -594,7 +592,7 @@
               </div>
               <div class="container right timelinestep">
                 <div class="content">
-                  <p>List Terms</p>
+                  <p>List Terms from the configured cp4d instance</p>
                   <a class="button is-dark is-medium" title="List terms"
                     href="didact://?commandId=vscode.open&projectFilePath=../wkc-api/notebooks/sandbox/export_terms.csv">List
                     Terms</a>
@@ -612,7 +610,7 @@
           <br><br>
           <div style="margin-top:0px; padding-top:0px;" class="container right">
             <div class="content">
-              <p>Export Project.</p>
+              <p>Export project from the configured cp4d instance</p>
               <a class="button is-dark is-medium" title="Export Project"
                 href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$cd /projects/wkc-api/notebooks/sandbox/;/home/user/.local/bin/ipython3 exportProject.py">Export
                 Project</a>
@@ -620,9 +618,9 @@
           </div>
           <div style="margin-top:0px; padding-top:0px;" class="container right">
             <div class="content">
-              <p>Import Project</p>
+              <p>Import project from the configured cp4d instance</p>
               <a class="button is-dark is-medium" title="Import Project"
-                href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox terminal$$cd /projects/wkc-api/notebooks/sandbox/;/home/user/.local/bin/ipython3 importProject.py">Import
+                href="didact://?commandId=vscode.didact.sendNamedTerminalAString&&text=sandbox: IPython: notebooks/sandbox$$cd /projects/wkc-api/notebooks/sandbox/;/home/user/.local/bin/ipython3 importProject.py">Import
                 Project</a>
             </div>
           </div>
@@ -633,7 +631,7 @@
       <div class="content">
         <p>Push code to GitHub repository</p>
         <a class="button is-dark is-medium" title="Delete services from IBM Cloud"
-          href="didact://?commandId=vscode.didact.sendNamedTerminalAString&text=sandbox%20terminal$$sh%20/github.sh ">Push
+          href="didact://?commandId=vscode.didact.sendNamedTerminalAString&text=sandbox: IPython: notebooks/sandbox%20terminal$$cd%20%2Fprojects%2Fwkc-api%20%26%26sh%20/github.sh ">Push
           to GITHUb</a>
         <p style="margin-top:10px;">Click to push code to your own Github repository. You will need a personal access
           token to complete this action via the CLI. Refer to this <a
