@@ -1,1 +1,2 @@
 username,displayName,email,password,user_roles
+tzdemo2,tzdemo2 1,tzdemo@gmail.com,password,["Data Scientist"]
